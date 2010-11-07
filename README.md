@@ -20,13 +20,14 @@ character by character while triggering the proper keyboard events.
 
 Installation
 ---------------------
-Download the .js file in [the lib directory](https://github.com/arex1337/send_keys/tree/master/lib/) and put it in your page. You're ready to go.
-
+Download the .js file in [the lib directory](https://github.com/arex1337/send_keys/tree/master/lib/) and put it in your page.  
+<script type="text/javascript" src="jquery.send_keys-XXX.js"></script>  
+You're ready to go.
 
 Usage
 ---------------------
-$('#someInputId').send_keys('hello'); //Will type 'hello' in the element with id="someInputId", provided that the element in a text input or a textarea
-$('textarea').send_keys('world'); //Will type 'world' in all <textarea>s on the page
+`$('#someInputId').send_keys('hello');` Will type 'hello' in the element with id="someInputId", provided that the element in a text input or a textarea
+`$('textarea').send_keys('world');` Will type 'world' in all <textarea>s on the page
 
 
 Tests
