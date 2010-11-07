@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>QUnit Test Suite</title>
+        <link rel="stylesheet" href="http://github.com/jquery/qunit/raw/master/qunit/qunit.css" type="text/css" media="screen">
+        <script type="text/javascript" src="http://github.com/jquery/qunit/raw/master/qunit/qunit.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="../lib/jquery.send_keys-0.1.js"></script>
+        <script type="text/javascript" src="tests.js"></script>
+    </head>
+    <body>
+        <h1 id="qunit-header">QUnit Test Suite</h1>
+        <h2 id="qunit-banner"></h2>
+        <div id="qunit-testrunner-toolbar"></div>
+        <h2 id="qunit-userAgent"></h2>
+        <ol id="qunit-tests"></ol>
+        <!-- Test HTML -->
+        <form action="" method="post" style="position: absolute; top: -9999px; left: -9999px;">
+            <input id="input1" type="text" />
+            <input id="input2" type="text" />
+            <input id="input3" type="text" />
+            <textarea id="textarea1" cols="10" rows="1"></textarea>
+            <textarea id="textarea2" cols="10" rows="1" onkeydown="$('#textarea2_results').html($('#textarea2_results').html()+'keydown')" onkeyup="$('#textarea2_results').html($('#textarea2_results').html()+'keyup')" onkeypress="$('#textarea2_results').html($('#textarea2_results').html()+'keypress')"></textarea>
+            <textarea id="textarea3" cols="10" rows="1" onkeydown="$('#textarea3_results').html($('#textarea3_results').html()+'keydown')" onkeyup="$('#textarea3_results').html($('#textarea3_results').html()+'keyup')" onkeypress="$('#textarea3_results').html($('#textarea3_results').html()+'keypress')"></textarea>
+            <div id="textarea2_results"></div>
+            <div id="textarea3_results"></div>
+        </form>
+    </body>
+</html>
